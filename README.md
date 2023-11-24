@@ -19,9 +19,6 @@ The program requires HTML5 and CSS3 <br>
 #### Description :
 GeekAndFood is a service that deliver products (vegetables, fruits, meats ...) and recipes to allox people to make pop culture plates.
 This one page website aim to present the most popular recipe and to fill a form if people want to use the service.
- 
-#### Issues : 
- - 
   
 #### Commits :
  - 24-nov-2023 : First version of the website
