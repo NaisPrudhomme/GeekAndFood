@@ -6,6 +6,8 @@ Anaïs Prud'homme (prudhomme.anais.12@outlook.fr) <br>
 MBA CDO 2022-2024  <br>
 B2 - Conception d'une solution digitale adaptée et pretinente <br>
 GEEK AND FOOD <br>
+<p><img align=right src="https://img.shields.io/badge/Java--violet?logo=Java&style=flat-square&color=caa6f7&logoColor=white&logoWidth=10"> 
+  <img align=right src="https://img.shields.io/badge/HTML--violet?logo=HTML5&style=flat-square&color=caa6f7&logoColor=white&logoWidth=10"> </p>
   
 #### Date :
  - creation date : 24-11-2023
