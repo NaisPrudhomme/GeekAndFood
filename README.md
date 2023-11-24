@@ -1,8 +1,6 @@
 ## GeekAndFood
   ### One Page site for MBA CDO exam
 
-<img align=right src="https://img.shields.io/pypi/pyversions/3?color=caa6f7&logo=Python&logoColor=white&style=flat-square">
-
 #### Author :
 Anaïs Prud'homme (prudhomme.anais.12@outlook.fr) <br>
 MBA CDO 2022-2024  <br>
