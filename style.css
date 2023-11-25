@@ -1,0 +1,172 @@
+﻿/*Palette de couleurs : 
+    #222D41 bleu de prusse (bleu très foncé)
+    #A0173B Violet Amaranthe (un espèce de rouge)
+    #639FAB Pierre de lune (plus clair que le bleu canard)
+    #FDC5AF Abricot (idéal pour les titres)
+    #FDFAED pour le texte
+*/
+
+html, body {
+    font-family: 'Century Gothic';
+    background-color: #222D41;
+    color: #FDFAED;
+    margin:0;
+    padding:0;
+}
+
+header {
+    background-color: #A0173B;
+    position: fixed; /* Set the header to fixed position */
+}
+
+/*********************************** NAVBAR ***********************************/
+
+nav {
+    display: flex;
+}
+
+.navbar {
+    /*overflow: hidden;*/
+    background-color: #25262E; /*same as the logo*/
+    position: fixed; 
+    top: 0; /* Position the navbar at the top of the page */
+    right: 0;
+    width: 100%; /* Full width */
+}
+
+.logo {
+    height: 120px;
+}
+
+a {
+    color: #58A4B0;
+    font-weight: bold;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    margin: auto;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+    /* Hover blue on navbar*/
+    .navbar a:hover {
+        background: #639FAB;
+        color: black;
+    }
+
+.navcta{
+    background: #A0173B;
+}
+
+    .navcta:hover {
+        background: #FDC5AF;
+        border: 2px solid #A0173B;
+        color: #A0173B;
+        text-align: center;
+        font-size: 21px;
+    }
+
+/*********************************** Main content ***********************************/
+main {
+    padding: 15px;
+    margin-top:10%;
+}
+
+/*------------------------ Containers and div ---------------------------*/
+
+.container {
+    padding:0;
+}
+
+    .container#home {
+        padding-top: 70px;
+
+    }
+
+    .container#contacts {
+        background-color: #FDC5AF;
+        width:full;
+        padding: 1% 5% 1% 5%;
+    }
+
+.doublecontainer {
+    display: inline-block;
+}
+
+    .doublecontainer #contactinfo {
+        float: left;
+        width: 30%;
+        color: #25262E;
+    }
+
+    .doublecontainer #contactform {
+        float: right;
+        width: 45%;
+        padding: 12px;
+        background-color: #222D41
+    }
+
+/*------------------------ Titles ---------------------------*/
+h1 {
+    color: #FDC5AF;
+    text-align: center;
+}
+
+
+h2 {
+    color: #FDC5AF;
+    text-align: center;
+}
+    h2#dark {
+        color: #222D41;
+    }
+
+
+/*------------------------ CTA and buttons ---------------------------*/
+
+button {
+    display: block;
+    margin: 0 auto;
+    background-color: #A0173B;
+    border-radius: 10px;
+    border: 4px #FDFAED;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+/*.cta:hover {
+    cursor: pointer;
+    background-color: #FDFAED;
+        border: 2px solid #A0173B;
+        color: #A0173B;
+        text-align: center;
+}-> There is too much hover xD*/
+
+.submitcta {
+    background-color: #639FAB;
+    font-size: 15px;
+}
+
+    .submitcta:hover {
+        background-color: #FDFAED;
+        border: 1px solid #639FAB;
+        color: #639FAB;
+        text-align: center;
+    }
+
+footer {
+    background-color: #25262E;
+    margin:0;
+    padding:2%;
+    width:100%;
+}
