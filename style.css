@@ -10,61 +10,78 @@ html, body {
     font-family: 'Century Gothic';
     background-color: #222D41;
     color: #FDFAED;
-    margin:0;
-    padding:0;
+    width: auto;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: #A0173B;
-    position: fixed; /* Set the header to fixed position */
+}
+
+/************************************COMMON************************************/
+a {
+    color: #639FAB;
+    font-weight: bolder;
 }
 
 /*********************************** NAVBAR ***********************************/
 
-nav {
-    display: flex;
-}
+
 
 .navbar {
-    /*overflow: hidden;*/
+    overflow: hidden;
     background-color: #25262E; /*same as the logo*/
-    position: fixed; 
+    position: fixed;
+    display: flex;
     top: 0; /* Position the navbar at the top of the page */
-    right: 0;
     width: 100%; /* Full width */
 }
 
 .logo {
     height: 120px;
-}
-
-a {
-    color: #58A4B0;
-    font-weight: bold;
-}
-
-.navbar a {
-    float: right;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    margin: auto;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-    /* Hover blue on navbar*/
-    .navbar a:hover {
-        background: #639FAB;
-        color: black;
+    border-radius: 50% 20% / 10% 40%;
     }
 
-.navcta{
+nav {
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+.navlinks {
+    vertical-align: center;
+}
+
+    .navlinks ul {
+        vertical-align: center;
+    }
+
+    .navlinks li {
+        display: inline;
+        float: left;
+    }
+
+    .navlinks a {
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        vertical-align: middle;
+        padding: 12px;
+        text-decoration: none;
+    }
+
+        /* Hover blue on navbar*/
+        .navlinks a:hover {
+            background: #639FAB;
+            color: black;
+        }
+
+.navcta {
     background: #A0173B;
 }
 
-    .navcta:hover {
-        background: #FDC5AF;
+    .navcta a:hover {
+        background: white;
         border: 2px solid #A0173B;
         color: #A0173B;
         text-align: center;
@@ -73,61 +90,127 @@ a {
 
 /*********************************** Main content ***********************************/
 main {
-    padding: 15px;
-    margin-top:10%;
 }
 
-/*------------------------ Containers and div ---------------------------*/
+/*------------------------ Titles ---------------------------*/
+p {
+    padding: 1px 5px 3px 5px;
+    font-size:18px;
+}
+
+span {
+    color: #639FAB;
+    font-weight: bolder;
+    font-size:22px;
+}
+
+h1 {
+    color: #639FAB;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+
+h2 {
+    color: #A0173B;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 30px;
+}
+
+h3 {
+    color: #FDC5AF;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    font-size: 25px;
+}
+
+.darkerh2 {
+    color: #222D41;
+}
+
+.lighterh2 {
+    color: white;
+}
+
+/*------------------------ Content ---------------------------*/
+
+.intro {
+    position: static;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/gateau-monstre-zelda-bothw.jpg");/*adding a dark opacity filter in front of the image*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-top: 70px;
+}
 
 .container {
-    padding:0;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: auto;
+    padding: 12px 12px 12px 12px;
 }
 
-    .container#home {
-        padding-top: 70px;
-
+    .container#bestseller {
+        height: 450px;
     }
 
     .container#contacts {
         background-color: #FDC5AF;
-        width:full;
+        width: full;
         padding: 1% 5% 1% 5%;
     }
 
-.doublecontainer {
-    display: inline-block;
+
+.fronttext {
+    color: #222D41;
+    font-weight: bolder;
+    width: 50%;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    vertical-align: middle;
+}
+
+.textcenter {
+    width: auto;
+    text-align: center;
+    padding: 15px 20px 15px 20px;
+}
+
+
+.doublecontainer { /*double container div with flex attribute*/
+    display: flex;
+    margin: 10px 10px 10px 10px;
 }
 
     .doublecontainer #contactinfo {
-        float: left;
-        width: 30%;
+        float: left; /*block to the left*/
+        width: 50%;
         color: #25262E;
     }
 
     .doublecontainer #contactform {
         float: right;
-        width: 45%;
+        width: 50%;
         padding: 12px;
         background-color: #222D41
     }
 
-/*------------------------ Titles ---------------------------*/
-h1 {
-    color: #FDC5AF;
-    text-align: center;
+
+
+.round {
+    border-radius: 1px 40px 40px 1px;
+    background-color: #639FAB;
+    width:100%;
+    max-height:650px;
 }
 
 
-h2 {
-    color: #FDC5AF;
-    text-align: center;
-}
-    h2#dark {
-        color: #222D41;
-    }
 
-
-/*------------------------ CTA and buttons ---------------------------*/
+/*----------- CTA and buttons -----------*/
 
 button {
     display: block;
@@ -139,6 +222,7 @@ button {
     text-align: center;
     font-size: 20px;
     padding: 10px;
+    margin-bottom: 20px;
     width: 200px;
     cursor: pointer;
 }
@@ -164,9 +248,11 @@ button {
         text-align: center;
     }
 
+/***********************************FOOTER*************************************/
+
 footer {
     background-color: #25262E;
-    margin:0;
-    padding:2%;
-    width:100%;
+    margin: 0;
+    padding: 2%;
+    width: 100%;
 }
