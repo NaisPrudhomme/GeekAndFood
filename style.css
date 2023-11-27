@@ -10,7 +10,7 @@ html, body {
     font-family: 'Century Gothic';
     background-color: #222D41;
     color: #FDFAED;
-    width: auto;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -73,36 +73,18 @@ nav {
         /* Hover blue on navbar*/
         .navlinks a:hover {
             background: #639FAB;
-            color: black;
         }
 
 .navcta {
     background: #A0173B;
 }
 
-    .navcta a:hover {
-        background: white;
-        border: 2px solid #A0173B;
-        color: #A0173B;
-        text-align: center;
-        font-size: 21px;
-    }
 
 /*********************************** Main content ***********************************/
 main {
 }
 
 /*------------------------ Titles ---------------------------*/
-p {
-    padding: 1px 5px 3px 5px;
-    font-size:18px;
-}
-
-span {
-    color: #639FAB;
-    font-weight: bolder;
-    font-size:22px;
-}
 
 h1 {
     color: #639FAB;
@@ -113,7 +95,7 @@ h1 {
 }
 
 h2 {
-    color: #A0173B;
+    color: #FDC5AF;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 5px;
@@ -130,10 +112,26 @@ h3 {
 
 .darkerh2 {
     color: #222D41;
+    margin-top:0;
 }
 
 .lighterh2 {
     color: white;
+}
+
+p {
+    padding: 1px 5px 3px 5px;
+    font-size: 18px;
+}
+
+span {
+    color: #639FAB;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.faqspan {
+    color: #FDC5AF;
 }
 
 /*------------------------ Content ---------------------------*/
@@ -148,21 +146,31 @@ h3 {
 }
 
 .container {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 0;
+    margin-left: 0;
     width: auto;
     padding: 12px 12px 12px 12px;
 }
 
-    .container#bestseller {
-        height: 450px;
+    .container#subscribe {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/Gastronogeek-2-Le-Retour-Livre-Recettes-Geek-4.jpg"); /*adding a dark opacity filter in front of the image*/
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: auto;
+        margin: 0;
     }
 
     .container#contacts {
         background-color: #FDC5AF;
         width: full;
         padding: 1% 5% 1% 5%;
+        margin: 0;
     }
+
+.whitecontainer {
+    background-color: white;
+}
 
 
 .fronttext {
@@ -199,9 +207,12 @@ h3 {
         background-color: #222D41
     }
 
+.largeimg{
+    width:100%;
+    margin:0;
+}
 
-
-.round {
+.roundimg {
     border-radius: 1px 40px 40px 1px;
     background-color: #639FAB;
     width:100%;
@@ -215,7 +226,7 @@ h3 {
 button {
     display: block;
     margin: 0 auto;
-    background-color: #A0173B;
+    background-color: #639FAB;
     border-radius: 10px;
     border: 4px #FDFAED;
     color: #ffffff;
@@ -254,5 +265,5 @@ footer {
     background-color: #25262E;
     margin: 0;
     padding: 2%;
-    width: 100%;
+    width: auto;
 }
